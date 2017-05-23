@@ -1,0 +1,64 @@
+body{
+  font-family: 'Rancho', cursive;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.headMenu{
+  font-size: 20px;
+}
+.menu{
+  padding: 2%;
+}
+.imagen{
+  width: 100%;
+  object-fit:contain;
+  display: inline-block;
+  height: 700px;
+  overflow: hidden;
+}
+.absoluto{
+  position: absolute;
+  z-index: -1;
+}
+.telefono{
+  width: 100%;
+  margin-left: 5px;
+  margin-top: -2%;
+  background-color: #FFC300;
+  padding-top: 5%;
+  align-items: center;
+  text-align: center;
+}
+.celular{
+  width: 100%;
+}
+.limpiar{
+  clear: both;
+}
+.texto-imagen{
+  width: 100%;
+}
+.texto-imagen>span{
+  font-size: 15px;
+}
+.ambos{
+  width: 80%;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  margin-left:0;
+  padding:3%;
+}
+.conductor{
+  background: rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 15px;
+  padding: 1%;
+  height: 30%;
+  color: white;
+}
