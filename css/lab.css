@@ -1,5 +1,18 @@
 body{
-  font-family: 'Rancho', cursive;
+  font-family: message-box;
+  font-size: 12px;
+}
+div{
+  width: 100%;
+}
+input{
+  border-radius: 5px;
+  background: transparent;
+  padding: 4px;
+  border: 1px solid gray;
+}
+li{
+  padding: 2%;
 }
 .container{
   width: 100%;
@@ -7,11 +20,23 @@ body{
   flex-direction: row;
   align-items: center;
 }
-.headMenu{
+.headMenuWhite>li>a{
+  color: white;
   font-size: 20px;
 }
 .menu{
-  padding: 2%;
+  width: 100%;
+  position: fixed;
+  background: white;
+  height: 12%;
+  font-size: 16px;
+}
+.menu>nav{
+  width: 100%;
+  align-self: center;
+}
+.menu>nav>ul>li>a{
+  color:black;
 }
 .imagen{
   width: 100%;
@@ -20,45 +45,100 @@ body{
   height: 700px;
   overflow: hidden;
 }
+.viaja{
+  width: 40%;
+  background-color:#FFC300;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 15px;
+  color: white;
+  justify-content:space-around;
+  padding: 2%;
+  margin-top: 12%;
+}
+.viaja-div{
+  display: flex;
+  padding: 5%;
+}
 .absoluto{
   position: absolute;
   z-index: -1;
 }
 .telefono{
   width: 100%;
-  margin-left: 5px;
   margin-top: -2%;
   background-color: #FFC300;
   padding-top: 5%;
   align-items: center;
   text-align: center;
 }
-.celular{
-  width: 100%;
-}
-.limpiar{
-  clear: both;
-}
 .texto-imagen{
-  width: 100%;
+  width: 60%;
+  text-align: justify;
 }
 .texto-imagen>span{
-  font-size: 15px;
+  font-size: 18px;
 }
 .ambos{
   width: 80%;
   border-top: 1px solid white;
   border-right: 1px solid white;
-  margin-left:0;
+  border-bottom: 1px solid white;
+  border-radius: 15px;
+  margin-left:-2%;
   padding:3%;
+  margin-bottom: 3%;
 }
 .conductor{
+  width: 30%;
+  height:30px;
   background: rgba(0, 0, 0, .5);
   display: flex;
   flex-direction: column;
   text-align: justify;
   font-size: 15px;
-  padding: 1%;
   height: 30%;
   color: white;
+  justify-content:space-around;
+  padding: 2%;
+}
+.tarifas{
+  width: 100%;
+  height:350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.todoabajo{
+  background-color: #635B59;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.abajo{
+  display: flex;
+  flex-direction: row;
+  height: 350px;
+  justify-content: space-between;
+}
+.stores{
+  align-self: flex-end;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer-abajo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.copy{
+  padding-left: 1%;
+}
+@media (max-width:480px){
+  #mycontainer{
+    width: 400px;
+  }
 }
